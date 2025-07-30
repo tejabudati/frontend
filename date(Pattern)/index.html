@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- patterns
+     patterns[a-zA-Z\d\s!@#$%^&*.]+
+    \d:- fro numbers
+    \s:- space
+    +:- for multiple charecters
+    {}:-to declare the range of the charecters, min to max seperated by ','
+     -->
+    <table cellspacing="0" align="center" width="300" height="200" border="1">
+        <tr>
+            <td align="center">
+                <form action="./index2.html">
+                    <h2>Enter Date</h2><br>
+                    <label for="">Year</label>
+                    <input type="text" name="Year" id="user" size="1" pattern="[\d]{4}" autocomplete="off" required title="Enter Valid Data">
+                    <label for="">/month</label>
+                    <input type="text" name="month" id="user" size="1" pattern="0[1-9]|1[0-2]" autocomplete="off" required title="Enter Valid Data">
+                    <label for="">/day</label>
+                    <input type="text" name="day" size="1" pattern="0[1-9]|[1][0-9]|[2][0-9]|3[0-1]" autocomplete="off" required title="Enter a valid day (01 to 31)"><br><br>
+                    <button>Submit</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
